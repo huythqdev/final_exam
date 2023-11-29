@@ -1,0 +1,225 @@
+/* ---------------- */
+/* header */
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2% 1rem 4%;
+  background: linear-gradient(45deg, #5d85d4, #4366c5);
+  margin-bottom: 3px;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left .logo-header {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left .logo-header img {
+  width: 2.1rem;
+  border-radius: 999px;
+}
+
+.nav-left .nav-icon-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left .nav-icon-left a {
+  position: relative;
+  font-size: 1rem;
+  color: #162938;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 1rem;
+}
+
+.nav-left .nav-icon-left a:first-child {
+  color: #fff;
+  background: #162938;
+  padding: 8px 12px;
+  border-radius: 24px;
+}
+
+.nav-search {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 38px;
+  width: 820px;
+}
+
+.nav-search input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 24px;
+  color: #162938;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0 0 0 20px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 1.4rem;
+  margin-right: 1.2rem;
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  color: #162938;
+}
+
+.nav-right span:hover {
+  background-color: #7ca4de;
+  transition: all 0.25s linear;
+}
+
+/* banner */
+.slider {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider .slider-img {
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  height: calc(100vh / 2);
+}
+
+/* cart-section */
+.cart-box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-image: url(/assets/pic/banner/line-bg.png),
+    url(/assets/pic/banner/pattern.png);
+  background-repeat: repeat-x, repeat;
+  background-position: left top, center top;
+  background-size: contain, contain;
+}
+
+.cart-wrap {
+  display: block;
+  width: 90%;
+  height: 136px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cart-title {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: auto;
+  height: 100%;
+  line-height: 144px;
+}
+
+.cart-title h2 {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Dancing Script";
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 32px;
+  color: #162938;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.cart-title h2 span {
+  margin-left: 2.3rem;
+}
+
+.cart-list {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70%;
+  max-width: 910px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.select-list {
+  display: inline-block;
+  position: relative;
+  height: 48px;
+  width: 290px;
+  margin: 0 5px 12px 5px;
+}
+
+.select-name {
+  background-color: #7ca4de;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.select-name:hover {
+  background-color: #5d85d4;
+}
+
+.select-list[data-cate="type"] .select-name {
+  border-radius: 0 30px 30px 30px;
+}
+.select-list[data-cate="place"] .select-name {
+  border-radius: 30px 0px 30px 30px;
+}
+.select-list[data-cate="time"] .select-name {
+  border-radius: 30px 30px 30px 0px;
+}
+.select-list[data-cate="price"] .select-name {
+  border-radius: 30px 30px 0px 30px;
+}
+
+.select-name span {
+  width: 40px;
+  height: 48px;
+  position: absolute;
+  right: 0px;
+  top: -2px;
+  background: url(/assets/pic/banner/select.png) no-repeat center center;
+}
+
+.select-name h3 {
+  display: block;
+  padding: 0 40px 0 20px;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 44px;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-transform: uppercase;
+}
